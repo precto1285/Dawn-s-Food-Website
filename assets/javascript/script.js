@@ -6,7 +6,7 @@ var appKey = "0755bcccaf4a8a7bce10f790e8db7678";
 $("#clickMe").on("click", function(event){
     event.preventDefault();
     var queryString = $("#searchWord").val().trim();
-    var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + queryString + "&api-key=" + appKey;
+    var url = "http://api.yummly.com/v1/api/recipes?_app_id=" + app-id + "&_app_key=" + app-key+ "&" + queryString;
 
     $.ajax({
         url: url,
